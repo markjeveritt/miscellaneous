@@ -35,7 +35,7 @@ class DynamicalSystem(ABC):
 
     @abstractmethod
     def dervatives(self, x: Integratable, t: float):
-        pass
+        raise NotImplementedError
  
     
     def euler_step(self, dt: float):
